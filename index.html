@@ -14,6 +14,23 @@
     <meta property="og:title" content="Cardoso&amp;Verpa">
     <meta property="og:image" content="https://installapp.my.canva.site/cardosoverpa/_assets/images/c4045527920ade23a38aeddba68e0849.jpg">
     <meta property="og:type" content="website">
+    
+    <script>
+  // Intercepta e redireciona qualquer busca de assets do Canva para a pasta local do GitHub
+  		(function() {
+  		  var originalFetch = window.fetch;
+  		  window.fetch = function(url, options) {
+    		  if (typeof url === 'string' && url.includes('canva')) {
+    		    // Redireciona chamadas do Canva para a raiz local do site
+    		    var localUrl = url.substring(url.lastIndexOf('/') + 1);
+     		   return originalFetch(localUrl, options);
+    		  }
+   		   return originalFetch(url, options);
+   		 };
+		  })();
+		</script>
+    
+    
     <script nonce="">window['__canva_website_bootstrap__'] = JSON.parse('{"A":"DAHRozhfhOg","B":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwia2lkIjoia2lkLTE3Nzg0NzAzNjEzOTQifQ..B3-3mZxLZ0gt3D7A.c_qW1suNKfKtw2GKLroFFkQFAEeZU1oEAQ7vYD8oi8rG_A68yo-koalG-r-TQYdIrS6Jl8VoYA.74qFWB8GDcnToQNA1Dqy6A"}');</script>
     <script nonce="">
       document.addEventListener('contextmenu', (e) => {
