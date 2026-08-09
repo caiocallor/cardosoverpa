@@ -14,7 +14,13 @@
     <meta property="og:title" content="Cardoso&amp;Verpa">
     <meta property="og:image" content="https://installapp.my.canva.site/cardosoverpa/_assets/images/c4045527920ade23a38aeddba68e0849.jpg">
     <meta property="og:type" content="website">
-    <script nonce="">window['__canva_website_bootstrap__'] = JSON.parse('{"A":"DAHRozhfhOg","B":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwia2lkIjoia2lkLTE3Nzg0NzAzNjEzOTQifQ..B3-3mZxLZ0gt3D7A.c_qW1suNKfKtw2GKLroFFkQFAEeZU1oEAQ7vYD8oi8rG_A68yo-koalG-r-TQYdIrS6Jl8VoYA.74qFWB8GDcnToQNA1Dqy6A"}');</script>
+    
+    <script>
+  // Força o Webpack/React do Canva a procurar os chunks e assets na mesma pasta do index.html
+  window.__webpack_public_path__ = './';
+		</script>
+    
+    <!-- <script nonce="">window['__canva_website_bootstrap__'] = JSON.parse('{"A":"DAHRozhfhOg","B":"eyJhbGciOiJkaXIiLCJlbmMiOiJBMjU2R0NNIiwia2lkIjoia2lkLTE3Nzg0NzAzNjEzOTQifQ..B3-3mZxLZ0gt3D7A.c_qW1suNKfKtw2GKLroFFkQFAEeZU1oEAQ7vYD8oi8rG_A68yo-koalG-r-TQYdIrS6Jl8VoYA.74qFWB8GDcnToQNA1Dqy6A"}');</script>-->
     <script nonce="">
       document.addEventListener('contextmenu', (e) => {
         const isMedia = ['img', 'image', 'video', 'svg', 'picture'].some(
@@ -2785,6 +2791,7 @@ class="a_GcMg zYq_BQ" style="font-size:1em;font-weight:400;font-style:normal;col
     </div>
     <div class="_3jkTAA"></div>
     <div class="Bymw5Q"></div>
-    <div class="BghEng"></div>                                                                                                            
+    <div class="BghEng"></div>
+    
   </body>
 </html>
